@@ -1,0 +1,23 @@
+# 应用模式提交任务 本地提交
+./flink run-application \
+-d \
+-t yarn-application \
+-ynm flink-test \
+-yjm 900 \
+-ytm 900 \
+-yqu root.default \
+-c com.retailersv1.DbusCdc2KafkaTopic /opt/soft/flink-1.17.1/local_jars/stream-realtime-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+# 应用模式提交任务 HDFS提交
+./flink run-application \
+-d \
+-t yarn-application \
+-yjm 900 \
+-ynm stream-cdc-to-kafka \
+-ytm 900 \
+-yqu root.default \
+-Dyarn.provided.lib.dirs="hdfs://cdh01:8020/flink-dist" \
+-c com.retailersv1.DbusCdc2KafkaTopic hdfs://cdh01:8020/flink-jars/stream-realtime_v1_cdc_to_kafka.jar
+
+
+

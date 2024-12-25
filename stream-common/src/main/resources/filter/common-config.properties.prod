@@ -1,0 +1,16 @@
+##env
+env=prod
+
+mysql.host=cdh03
+mysql.port=3306
+mysql.url=jdbc:mysql://cdh03:3306
+
+mysql.database=gmall
+mysql.databases.conf=gmall_config
+mysql.user=root
+mysql.pwd=root
+
+
+zookeeper.server.host.list=cdh03
+
+hbase.namespace=realtime_v2
