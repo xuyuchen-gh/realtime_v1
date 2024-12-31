@@ -12,5 +12,11 @@ mysql.pwd=root
 
 
 zookeeper.server.host.list=cdh03
-
 hbase.namespace=realtime_v2
+
+
+kafka.topic.db=topic_db
+Kafka.bootstrap.servers=cdh01:9092,cdh02:9092,cdh03:9092
+
+hive.conf.dir=/D:/soft/soft/IDE/Projects/shixun1/stream-dev/stream-realtime/src/main/resources
+
